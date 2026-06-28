@@ -9,15 +9,15 @@ Warm tones. Zero visual noise. - [Flynt](https://flynt-theme.github.io/flynt) fo
 **macOS** - Ghostty stores user themes in Application Support:
 ```sh
 mkdir -p ~/Library/Application\ Support/com.mitchellh.ghostty/themes
-cp dist/flynt-dark ~/Library/Application\ Support/com.mitchellh.ghostty/themes/
-cp dist/flynt-light ~/Library/Application\ Support/com.mitchellh.ghostty/themes/
+cp themes/flynt-dark ~/Library/Application\ Support/com.mitchellh.ghostty/themes/
+cp themes/flynt-light ~/Library/Application\ Support/com.mitchellh.ghostty/themes/
 ```
 
 **Linux** - Ghostty uses the XDG config directory:
 ```sh
 mkdir -p ~/.config/ghostty/themes
-cp dist/flynt-dark ~/.config/ghostty/themes/
-cp dist/flynt-light ~/.config/ghostty/themes/
+cp themes/flynt-dark ~/.config/ghostty/themes/
+cp themes/flynt-light ~/.config/ghostty/themes/
 ```
 
 ### 2. Set the theme
@@ -49,7 +49,7 @@ Themes are generated from [`theme.conf.tmpl`](theme.conf.tmpl) using [strike](ht
 
 ```sh
 brew tap flynt-theme/tap && brew install strike
-strike build theme.conf.tmpl --out dist/
+strike build theme.conf.tmpl --out themes/
 ```
 
 ## License
