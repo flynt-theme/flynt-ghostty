@@ -1,0 +1,25 @@
+---
+output: flynt-{{ .variant }}
+---
+palette = 0={{ if eq .variant "dark" }}{{ .bg2 }}{{ else }}{{ .tx2 }}{{ end }}
+palette = 1={{ .ember }}
+palette = 2={{ .fern }}
+palette = 3={{ .amber }}
+palette = 4={{ .delft }}
+palette = 5={{ .plum }}
+palette = 6={{ .teal }}
+palette = 7={{ if eq .variant "dark" }}{{ .tx3 }}{{ else }}{{ .bg2 }}{{ end }}
+palette = 8={{ if eq .variant "dark" }}{{ .bg4 }}{{ else }}{{ .tx }}{{ end }}
+palette = 9={{ .ember }}
+palette = 10={{ .moss }}
+palette = 11={{ .amber }}
+palette = 12={{ .delft }}
+palette = 13={{ .iris }}
+palette = 14={{ .teal }}
+palette = 15={{ if eq .variant "dark" }}{{ .tx }}{{ else }}{{ .bg }}{{ end }}
+background = {{ .bg }}
+foreground = {{ .tx4 }}
+cursor-color = {{ .amber }}
+cursor-text = {{ .bg }}
+selection-background = {{ .bg4 }}
+selection-foreground = {{ .tx }}
